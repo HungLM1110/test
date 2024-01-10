@@ -21,6 +21,8 @@ const FileDrop = () => {
     
         // Fetch the files
         const droppedFiles = Array.from(event.dataTransfer.files);
+        console.log('1111',droppedFiles);
+
         setFiles(droppedFiles);
     
         // Use FileReader to read file content
@@ -52,6 +54,10 @@ const FileDrop = () => {
       }}
     >
       Drag and drop some files here
+    </div>
+
+    <div>
+
     </div>
     </div>
 
